@@ -1,0 +1,46 @@
+@import "../../main_styles/main.scss";
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    
+    border: 1px solid $gs-000;
+    border-radius: 2px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.silder{
+    position: absolute;
+    cursor: pointer;
+
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+
+    transition: 0.4s;
+}
+
+.slider::before{
+    position: absolute;
+    content:"";
+    width: 33px;
+    height: 22px;
+    border-radius: 2px;
+    left:3px;
+    bottom:3px;
+    background-color: $gs-000;
+    transition: 0.4s;
+}
+
+input:checked + .slider::before{
+    transform:translateX(31px);
+    background-color: $gs-001;
+}

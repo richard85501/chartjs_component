@@ -1,0 +1,35 @@
+.App{
+    width: calc(100vw - 100px);
+    // background: center url("./pic/081a7f1fa54d497bc3afcaa85c41528c.jpg");
+    padding:50px;
+    .switchContainer, .checkboxContainer{
+        width: 100px;
+        height: 100px;
+    }
+    .RadarContainer{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(110, 106, 106, 0);
+    }
+}
+
+.container{
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.unitWrapper{
+    width: 40%;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 1px 1px 40px 15px hsla(0, 0%, 0%, 0.1);
+    border-radius:8px;
+    .title{
+        margin-bottom: 8px;
+    }
+    .chartWrapper{
+        height: 150px;
+    }
+}
+

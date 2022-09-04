@@ -1,0 +1,31 @@
+@import "../../main_styles/main.scss";
+
+.checkbox{
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    border:1px solid $gs-000;
+    border-radius: 2px;
+    position: relative;
+}
+
+.checkedDiv {
+    display: inline-block;
+    width: 9px;
+    height: 8px;
+    background-color: $gs-001;
+    position: absolute;
+    left: 6px;
+    top:6px;
+    opacity: 0;
+}
+
+.checkbox input:checked + .checkedDiv {
+    opacity: 1;
+}
+
+.checkbox input {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
